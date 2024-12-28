@@ -1,6 +1,6 @@
 # winope
 
-A command-line tool for resizing and moving windows.
+A CLI tool for resizing and moving windows.
 
 ## Usage
 
@@ -15,7 +15,7 @@ List all visible window handles and their titles.
 ### Resize a Window
 
 ```bash
-.\winope.exe resize <handle> <width> <height>
+.\winope.exe size <HANDLE> <WIDTH> <HEIGHT>
 ```
 
 Resize a specific window by providing its handle, width, and height.
@@ -23,7 +23,7 @@ Resize a specific window by providing its handle, width, and height.
 ### Move a Window
 
 ```bash
-.\winope.exe move <handle> <x> <y>
+.\winope.exe move <HANDLE> <X> <Y>
 ```
 
 Move a specific window by providing its handle, x position, and y position.
