@@ -59,7 +59,7 @@ unsafe extern "system" fn print_window(hwnd: HWND, _: isize) -> i32 {
         return 1;
     }
     let handle = hwnd as u32;
-    println!("{handle:>8}: {win_text}");
+    println!("{handle:>8} | {win_text}");
     1
 }
 
@@ -67,6 +67,8 @@ fn main() {
     let cli = Cli::parse();
     match cli.command {
         Commands::List => {
+            println!("  Handle | Title");
+            println!("---------+--------------------------------");
             unsafe {
                 EnumWindows(Some(print_window), 0);
             }
