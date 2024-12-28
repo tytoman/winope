@@ -1,4 +1,4 @@
-# .\winope.exe
+# winope
 
 A command-line tool for resizing and moving windows.
 
