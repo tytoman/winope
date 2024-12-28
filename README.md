@@ -15,7 +15,7 @@ List all visible window handles and their titles.
 ### Resize a Window
 
 ```bash
-.\winope.exe resize <window_id> <width> <height>
+.\winope.exe resize <handle> <width> <height>
 ```
 
 Resize a specific window by providing its handle, width, and height.
@@ -23,7 +23,7 @@ Resize a specific window by providing its handle, width, and height.
 ### Move a Window
 
 ```bash
-.\winope.exe move <window_id> <x> <y>
+.\winope.exe move <handle> <x> <y>
 ```
 
 Move a specific window by providing its handle, x position, and y position.
